@@ -1,0 +1,38 @@
+{
+  "name": "performance-cli",
+  "version": "0.1.0",
+  "description": "A command line tool to test the performance of other command line tools.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --no-config --write ."
+  },
+  "bin": {
+    "performance": "./src/index.js",
+    "performance-cli": "./src/index.js",
+    "perf-cli": "./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadowtime2000/performance-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "performance",
+    "benchmark"
+  ],
+  "author": "shadowtime2000",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shadowtime2000/performance-cli/issues"
+  },
+  "homepage": "https://github.com/shadowtime2000/performance-cli#readme",
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "cliui": "^7.0.1",
+    "yargs": "^16.0.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  }
+}
