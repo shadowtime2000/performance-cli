@@ -1,4 +1,5 @@
 const Benchmark = require("benchmark");
+const chalk = require("chalk");
 const ui = require("cliui")();
 
 const { execSync } = require("child_process");
@@ -12,23 +13,23 @@ const benchmarkCommand = (commandList, async = true) => {
   });
   ui.div(
     {
-      text: "Command",
+      text: chalk.magenta("Command"),
       align: "left",
     },
     {
-      text: "Cycles",
+      text: chalk.magenta("Cycles"),
       align: "left",
     },
     {
-      text: "hz",
+      text: chalk.magenta("hz"),
       align: "left",
     },
     {
-      text: "Time elapsed",
+      text: chalk.magenta("Time elapsed"),
       align: "left",
     },
     {
-      text: "Time per cycle",
+      text: chalk.magenta("Time per cycle"),
       align: "left",
     }
   );
@@ -42,23 +43,23 @@ const benchmarkCommand = (commandList, async = true) => {
 
     tempUI.div(
       {
-        text: e.target.name,
+        text: chalk.green(e.target.name),
         align: "left",
       },
       {
-        text: e.target.cycles,
+        text: chalk.green(e.target.cycles),
         align: "left",
       },
       {
-        text: e.target.hz,
+        text: chalk.green(e.target.hz),
         align: "left",
       },
       {
-        text: e.target.times.elapsed,
+        text: chalk.green(e.target.times.elapsed),
         align: "left",
       },
       {
-        text: e.target.times.cycle,
+        text: chalk.green(e.target.times.cycle),
         align: "left",
       }
     );

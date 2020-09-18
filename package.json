@@ -29,6 +29,7 @@
   "homepage": "https://github.com/shadowtime2000/performance-cli#readme",
   "dependencies": {
     "benchmark": "^2.1.4",
+    "chalk": "^4.1.0",
     "cliui": "^7.0.1",
     "yargs": "^16.0.3"
   },
